@@ -1,0 +1,48 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+---
+
+<Layout title="Frontend Mentor | myteam website challenge - Homepage">
+  <!-- The Header-->
+  <Header />
+  <main>
+    <section
+      class="relative mt-20 flex flex-col items-center md:mt-[7.5rem] xl:max-2xl:mx-[10.31rem] xl:max-2xl:mt-[8.31rem]"
+    >
+      <div
+        class="mx-6 mb-[12.13rem] flex flex-col items-center gap-[1.12rem] text-center md:mb-[16rem] md:gap-6 xl:max-2xl:mb-[15.63rem] xl:max-2xl:flex-row xl:max-2xl:justify-between xl:max-2xl:gap-[1.87rem] xl:max-2xl:text-left"
+      >
+        <h1
+          class="w-[15.4375rem] text-[2.5rem] font-bold leading-10 text-white md:w-[24.6875rem] md:text-[4rem] md:leading-[3.5rem] xl:max-2xl:w-[38.6875rem] xl:max-2xl:text-[6.25rem] xl:max-2xl:leading-[6.25rem]"
+        >
+          Find the best <span class="text-[#F67E7E]">talent</span>
+        </h1>
+        <p
+          class="w-[20.4375rem] text-[0.9375rem] font-semibold leading-7 text-white md:w-[28.5625rem] xl:max-2xl:relative xl:max-2xl:w-[27.8125rem] xl:max-2xl:self-end xl:max-2xl:text-lg xl:max-2xl:before:absolute xl:max-2xl:before:top-[-4.94rem] xl:max-2xl:before:h-[0.25rem] xl:max-2xl:before:w-[3.125rem] xl:max-2xl:before:bg-[#79C8C7]"
+        >
+          Finding the right people and building high performing teams can be
+          hard. Most companies aren&#39;t tapping into the abundance of global
+          talent. We&#39;re about to change that.
+        </p>
+      </div>
+      <div class="xl:max-2xl:relative xl:max-2xl:right-[-23.063rem]">
+        <img
+          src="/public/images/bg-pattern-home-2.svg"
+          alt="pattern"
+          class=""
+        />
+      </div>
+      <div
+        class="hidden xl:max-2xl:absolute xl:max-2xl:left-[-14.75rem] xl:max-2xl:top-[-0.37rem] xl:max-2xl:flex"
+      >
+        <img
+          src="/public/images/bg-pattern-home-1.svg"
+          alt="pattern"
+          class=""
+        />
+      </div>
+    </section>
+  </main>
+</Layout>

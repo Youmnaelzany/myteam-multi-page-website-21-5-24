@@ -1,0 +1,95 @@
+---
+import "@/styles/globals.css";
+---
+
+<header
+  class="realative mx-6 mt-12 flex items-center justify-between md:ml-[2.44rem] md:mr-10 md:mt-[4.5rem] md:gap-12 xl:max-2xl:mx-[10.31rem] xl:max-2xl:mt-[4.81rem] xl:max-2xl:gap-20"
+>
+  <div class="flex items-center justify-center gap-[11.19rem]">
+    <a href="/" class="">
+      <img src="/public/images/logo.svg" alt="logo" class="" />
+    </a>
+    <img
+      src="/public/images/icon-hamburger.svg"
+      alt="open menu"
+      class="md:max-2xl:hidden"
+      id="openMenu"
+    />
+    <img
+      src="/public/images/icon-close.svg"
+      alt="close menu"
+      class="z-50 hidden"
+      id="closeMenu"
+    />
+  </div>
+  <!-- Mobile Nav Menu -->
+  <nav
+    class="absolute right-0 top-0 hidden h-[41.6875rem] w-[15.9375rem] bg-[#2C6269] pl-12 pt-28"
+    id="menuBar"
+  >
+    <ul class="flex flex-col gap-6">
+      <li>
+        <a
+          href="/"
+          class="text-lg font-semibold leading-7 text-white transition-colors duration-300 ease-in hover:text-[#F67E7E]"
+          >home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/about"
+          class="text-lg font-semibold leading-7 text-white transition-colors duration-300 ease-in hover:text-[#F67E7E]"
+          >about</a
+        >
+      </li>
+    </ul>
+    <div
+      class="mt-9 flex h-12 w-[9.9375rem] items-center justify-center rounded-3xl border-[2px] border-solid border-white text-lg font-semibold leading-7 text-white transition-all duration-300 ease-in hover:bg-white hover:text-[#002529]"
+    >
+      <a href="/contact" class="">Contact us</a>
+    </div>
+  </nav>
+
+  <!-- Tablet & Desktop Nav Menu -->
+  <nav
+    class="hidden md:gap-[15.75rem] md:max-2xl:flex md:max-2xl:items-center md:max-2xl:justify-between xl:gap-[36.06rem]"
+  >
+    <ul class="flex items-center justify-center gap-10">
+      <li>
+        <a
+          href="/"
+          class="text-lg font-semibold leading-7 text-white transition-colors duration-300 ease-in hover:text-[#F67E7E]"
+          >home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/about"
+          class="text-lg font-semibold leading-7 text-white transition-colors duration-300 ease-in hover:text-[#F67E7E]"
+          >about</a
+        >
+      </li>
+    </ul>
+    <div
+      class="flex h-12 w-[9.9375rem] items-center justify-center rounded-3xl border-[2px] border-solid border-white text-lg font-semibold leading-7 text-white transition-all duration-300 ease-in hover:bg-white hover:text-[#002529]"
+    >
+      <a href="/contact" class="">Contact us</a>
+    </div>
+  </nav>
+</header>
+
+<script is:inline>
+  const openMenu = document.getElementById("openMenu");
+  const closeMenu = document.getElementById("closeMenu");
+  const menuBar = document.getElementById("menuBar");
+  openMenu.addEventListener("click", () => {
+    menuBar.classList.remove("hidden");
+    closeMenu.classList.remove("hidden");
+    openMenu.classList.add("hidden");
+  });
+  closeMenu.addEventListener("click", () => {
+    menuBar.classList.add("hidden");
+    closeMenu.classList.add("hidden");
+    openMenu.classList.remove("hidden");
+  });
+</script>
