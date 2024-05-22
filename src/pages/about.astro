@@ -8,9 +8,9 @@ import Footer from "@/components/Footer.astro";
 <Layout title="Frontend Mentor | myteam website challenge - Homepage">
   <!-- The Header-->
   <Header />
-  <main>
+  <main class="overflow-x-hidden">
     <section
-      class="relative z-50 mx-6 mb-[6.75rem] mt-20 flex flex-col items-center gap-4 text-center md:mb-[7rem] md:ml-[2.81rem] md:mr-10 md:mt-[7.62rem] md:gap-6 xl:max-2xl:mx-[10.31rem] xl:max-2xl:mb-[7.5rem] xl:max-2xl:mt-[7.75rem] xl:max-2xl:flex-row xl:max-2xl:items-start xl:max-2xl:justify-between xl:max-2xl:gap-[1.87rem] xl:max-2xl:text-left"
+      class="relative z-30 mx-6 mb-[6.75rem] mt-20 flex flex-col items-center gap-4 text-center md:mb-[7rem] md:ml-[2.81rem] md:mr-10 md:mt-[7.62rem] md:gap-6 xl:max-2xl:mx-[10.31rem] xl:max-2xl:mb-[7.5rem] xl:max-2xl:mt-[7.75rem] xl:max-2xl:flex-row xl:max-2xl:items-start xl:max-2xl:justify-between xl:max-2xl:gap-[1.87rem] xl:max-2xl:text-left"
     >
       <h1
         class="w-[20.4375rem] text-[2.5rem] font-bold leading-10 text-white md:w-[42.6875rem] md:leading-[3.5rem] md:max-2xl:text-[4rem] xl:max-2xl:-mt-10 xl:max-2xl:w-[21.875rem] xl:max-2xl:leading-[6.25rem]"
@@ -33,88 +33,544 @@ import Footer from "@/components/Footer.astro";
     </section>
 
     <section
-      class="relative z-50 flex flex-col items-center gap-12 overflow-hidden bg-[#004047] px-6 pb-[7.25rem] pt-[5.5rem] md:pb-[8rem] md:pl-[6.06rem] md:pr-[6.12rem] md:pt-[6.25rem] xl:max-2xl:px-[10.31rem] xl:max-2xl:pb-[10.5rem] xl:max-2xl:pt-[8.75rem]"
+      class="relative z-40 flex flex-col items-center gap-12 overflow-hidden bg-[#004047] px-6 pb-[7.25rem] pt-[5.5rem] md:pb-[8rem] md:pl-[6.06rem] md:pr-[6.12rem] md:pt-[6.25rem] xl:max-2xl:px-[10.31rem] xl:max-2xl:pb-[10.5rem] xl:max-2xl:pt-[8.75rem]"
     >
       <img
         src="/images/bg-pattern-about-2-contact-1.svg"
         alt=""
         class="absolute left-[-6.188rem] top-[-6.3rem] overflow-hidden md:top-[-0.3rem] xl:max-2xl:top-[-0.3rem]"
       />
-      <h2 class="">Meet the directors</h2>
+      <h2
+        class="text-[2rem] font-bold leading-8 text-white xl:max-2xl:text-[3rem] xl:max-2xl:leading-[3rem]"
+      >
+        Meet the directors
+      </h2>
       <div
         class="grid grid-cols-1 gap-[3.25rem] md:grid-cols-2 md:gap-x-[0.69rem] md:gap-y-[4.75rem] xl:max-2xl:grid-cols-3 xl:max-2xl:gap-x-[1.87rem] xl:max-2xl:gap-y-[4.75rem]"
       >
         <!-- Nikita Marks -->
         <div
-          class="xl:max-2xl:w-[21.875rem ] h-[15.8125rem] w-[20.4375rem] bg-[#002529]
-          md:w-[17.5625rem]"
+          class="relative flex h-[15.8125rem] w-[20.4375rem]
+          flex-col items-center bg-[#002529] pb-14 pt-8 md:w-[17.5625rem] xl:max-2xl:w-[21.875rem]"
         >
-          <p class="">
-            “It always amazes me how much talent there is in every corner of the
-            globe.”
-          </p>
-          <h3 class="">Nikita Marks</h3>
-          <h4 class="">Founder & CEO</h4>
+          <!-- Flip Card -->
+          <div class="flipCard hidden">
+            <div class="flex flex-col items-center text-center">
+              <h3 class="mb-2 text-lg font-bold text-[#79C8C7]">
+                Nikita Marks
+              </h3>
+              <p
+                class="w-[14.666rem] text-[0.9375rem] font-semibold leading-[1.5625rem] text-white"
+              >
+                “It always amazes me how much talent there is in every corner of
+                the globe.”
+              </p>
+              <div class="mt-6 flex items-center justify-center gap-4">
+                <a href="" class=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    ><path
+                      fill="#FFF"
+                      d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                    ></path></svg
+                  ></a
+                >
+                <a href="" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <!-- The Button to Close -->
+              <button
+                type="button"
+                class="openFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#79C8C7]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                  ><path
+                    fill="#012F34"
+                    fill-rule="evenodd"
+                    d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+                  ></path></svg
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Main Card -->
+          <div class="mainCard flex flex-col items-center gap-4 text-center">
+            <div class="">
+              <img
+                src="/public/images/avatar-nikita.jpg"
+                alt=""
+                class="size-24 rounded-full border-[2px] border-solid border-[#C4FFFE]"
+              />
+            </div>
+            <div class="">
+              <h3 class="text-lg font-bold text-[#79C8C7]">Nikita Marks</h3>
+              <h4
+                class="text-[0.9375rem] font-medium leading-[1.5625rem] text-white"
+              >
+                Founder & CEO
+              </h4>
+            </div>
+            <!-- The Button to Open -->
+            <button
+              type="button"
+              class="closeFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#F67E7E]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                ><path
+                  fill="#012F34"
+                  fill-rule="evenodd"
+                  d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"></path></svg
+              >
+            </button>
+          </div>
         </div>
+
         <!-- Cristian Duncan -->
         <div
-          class="xl:max-2xl:w-[21.875rem ] h-[15.8125rem] w-[20.4375rem] bg-[#002529]
-          md:w-[17.5625rem]"
+          class="relative flex h-[15.8125rem] w-[20.4375rem]
+          flex-col items-center bg-[#002529] pb-14 pt-8 md:w-[17.5625rem] xl:max-2xl:w-[21.875rem]"
         >
-          <p class="">
-            “Distributed teams required unique processes. You need to approach
-            work in a new way.”
-          </p>
-          <h3 class="">Cristian Duncan</h3>
-          <h4 class="">Co-founder & COO</h4>
+          <!-- Flip Card -->
+          <div class="flipCard hidden">
+            <div class="flex flex-col items-center text-center">
+              <h3 class="mb-2 text-lg font-bold text-[#79C8C7]">
+                Cristian Duncan
+              </h3>
+              <p
+                class="w-[14.666rem] text-[0.9375rem] font-semibold leading-[1.5625rem] text-white"
+              >
+                “Distributed teams required unique processes. You need to
+                approach work in a new way.”
+              </p>
+              <div class="mt-6 flex items-center justify-center gap-4">
+                <a href="" class=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    ><path
+                      fill="#FFF"
+                      d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                    ></path></svg
+                  ></a
+                >
+                <a href="" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <!-- The Button to Close -->
+              <button
+                type="button"
+                class="openFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#79C8C7]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                  ><path
+                    fill="#012F34"
+                    fill-rule="evenodd"
+                    d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+                  ></path></svg
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Main Card -->
+          <div class="mainCard flex flex-col items-center gap-4 text-center">
+            <div class="">
+              <img
+                src="/public/images/avatar-christian.jpg"
+                alt=""
+                class="size-24 rounded-full border-[2px] border-solid border-[#C4FFFE]"
+              />
+            </div>
+            <div class="">
+              <h3 class="text-lg font-bold text-[#79C8C7]">Cristian Duncan</h3>
+              <h4
+                class="text-[0.9375rem] font-medium leading-[1.5625rem] text-white"
+              >
+                Co-founder & COO
+              </h4>
+            </div>
+            <!-- The Button to Open -->
+            <button
+              type="button"
+              class="closeFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#F67E7E]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                ><path
+                  fill="#012F34"
+                  fill-rule="evenodd"
+                  d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"></path></svg
+              >
+            </button>
+          </div>
         </div>
+
         <!-- Cruz Hamer -->
         <div
-          class="xl:max-2xl:w-[21.875rem ] h-[15.8125rem] w-[20.4375rem] bg-[#002529]
-          md:w-[17.5625rem]"
+          class="relative flex h-[15.8125rem] w-[20.4375rem] flex-col items-center bg-[#002529] pb-14 pt-8 md:w-[17.5625rem] xl:max-2xl:w-[21.875rem]"
         >
-          <p class="">
-            “Technology is at the forefront of enabling distributed teams.
-            That's where we come in.”
-          </p>
-          <h3 class="">Cruz Hamer</h3>
-          <h4 class="">Co-founder & CTO</h4>
+          <!-- Flip Card -->
+          <div class="flipCard hidden">
+            <div class="flex flex-col items-center text-center">
+              <h3 class="mb-2 text-lg font-bold text-[#79C8C7]">Cruz Hamer</h3>
+              <p
+                class="w-[14.666rem] text-[0.9375rem] font-semibold leading-[1.5625rem] text-white"
+              >
+                “Technology is at the forefront of enabling distributed teams.
+                That's where we come in.”
+              </p>
+              <div class="mt-6 flex items-center justify-center gap-4">
+                <a href="" class=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    ><path
+                      fill="#FFF"
+                      d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                    ></path></svg
+                  ></a
+                >
+                <a href="" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <!-- The Button to Close -->
+              <button
+                type="button"
+                class="openFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#79C8C7]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                  ><path
+                    fill="#012F34"
+                    fill-rule="evenodd"
+                    d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+                  ></path></svg
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Main Card -->
+          <div class="mainCard flex flex-col items-center gap-4 text-center">
+            <div class="">
+              <img
+                src="/public/images/avatar-cruz.jpg"
+                alt=""
+                class="size-24 rounded-full border-[2px] border-solid border-[#C4FFFE]"
+              />
+            </div>
+            <div class="">
+              <h3 class="text-lg font-bold text-[#79C8C7]">Cruz Hamer</h3>
+              <h4
+                class="text-[0.9375rem] font-medium leading-[1.5625rem] text-white"
+              >
+                Co-founder & CTO
+              </h4>
+            </div>
+            <!-- The Button to Open -->
+            <button
+              type="button"
+              class="closeFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#F67E7E]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                ><path
+                  fill="#012F34"
+                  fill-rule="evenodd"
+                  d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"></path></svg
+              >
+            </button>
+          </div>
         </div>
+
         <!-- Drake Heaton -->
         <div
-          class="xl:max-2xl:w-[21.875rem ] h-[15.8125rem] w-[20.4375rem] bg-[#002529]
-          md:w-[17.5625rem]"
+          class="relative flex h-[15.8125rem] w-[20.4375rem] flex-col items-center bg-[#002529] pb-14 pt-8 md:w-[17.5625rem] xl:max-2xl:w-[21.875rem]"
         >
-          <p class="">
-            “Hiring similar people from similar backgrounds is a surefire way to
-            stunt innovation.”
-          </p>
-          <h3 class="">Drake Heaton</h3>
-          <h4 class="">Business Development Lead</h4>
+          <!-- Flip Card -->
+          <div class="flipCard hidden">
+            <div class="flex flex-col items-center text-center">
+              <h3 class="mb-2 text-lg font-bold text-[#79C8C7]">
+                Drake Heaton
+              </h3>
+              <p
+                class="w-[14.666rem] text-[0.9375rem] font-semibold leading-[1.5625rem] text-white"
+              >
+                “Hiring similar people from similar backgrounds is a surefire
+                way to stunt innovation.”
+              </p>
+              <div class="mt-6 flex items-center justify-center gap-4">
+                <a href="" class=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    ><path
+                      fill="#FFF"
+                      d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                    ></path></svg
+                  ></a
+                >
+                <a href="" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <!-- The Button to Close -->
+              <button
+                type="button"
+                class="openFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#79C8C7]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                  ><path
+                    fill="#012F34"
+                    fill-rule="evenodd"
+                    d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+                  ></path></svg
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Main Card -->
+          <div class="mainCard flex flex-col items-center gap-4 text-center">
+            <div class="">
+              <img
+                src="/public/images/avatar-drake.jpg"
+                alt=""
+                class="size-24 rounded-full border-[2px] border-solid border-[#C4FFFE]"
+              />
+            </div>
+            <div class="">
+              <h3 class="text-lg font-bold text-[#79C8C7]">Drake Heaton</h3>
+              <h4
+                class="text-[0.9375rem] font-medium leading-[1.5625rem] text-white"
+              >
+                Business Development Lead
+              </h4>
+            </div>
+            <!-- The Button to Open -->
+            <button
+              type="button"
+              class="closeFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#F67E7E]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                ><path
+                  fill="#012F34"
+                  fill-rule="evenodd"
+                  d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"></path></svg
+              >
+            </button>
+          </div>
         </div>
+
         <!-- Griffin Wise -->
         <div
-          class="xl:max-2xl:w-[21.875rem ] h-[15.8125rem] w-[20.4375rem] bg-[#002529]
-          md:w-[17.5625rem]"
+          class="relative flex h-[15.8125rem] w-[20.4375rem] flex-col items-center bg-[#002529] pb-14 pt-8 md:w-[17.5625rem] xl:max-2xl:w-[21.875rem]"
         >
-          <p class="">
-            “Unique perspectives shape unique products, which is what you need
-            to survive these days.”
-          </p>
-          <h3 class="">Griffin Wise</h3>
-          <h4 class="">Lead Marketing</h4>
+          <!-- Flip Card -->
+          <div class="flipCard hidden">
+            <div class="flex flex-col items-center text-center">
+              <h3 class="mb-2 text-lg font-bold text-[#79C8C7]">
+                Griffin Wise
+              </h3>
+              <p
+                class="w-[14.666rem] text-[0.9375rem] font-semibold leading-[1.5625rem] text-white"
+              >
+                “Unique perspectives shape unique products, which is what you
+                need to survive these days.”
+              </p>
+              <div class="mt-6 flex items-center justify-center gap-4">
+                <a href="" class=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    ><path
+                      fill="#FFF"
+                      d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                    ></path></svg
+                  ></a
+                >
+                <a href="" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <!-- The Button to Close -->
+              <button
+                type="button"
+                class="openFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#79C8C7]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                  ><path
+                    fill="#012F34"
+                    fill-rule="evenodd"
+                    d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+                  ></path></svg
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Main Card -->
+          <div class="mainCard flex flex-col items-center gap-4 text-center">
+            <div class="">
+              <img
+                src="/public/images/avatar-griffin.jpg"
+                alt=""
+                class="size-24 rounded-full border-[2px] border-solid border-[#C4FFFE]"
+              />
+            </div>
+            <div class="">
+              <h3 class="text-lg font-bold text-[#79C8C7]">Griffin Wise</h3>
+              <h4
+                class="text-[0.9375rem] font-medium leading-[1.5625rem] text-white"
+              >
+                Lead Marketing
+              </h4>
+            </div>
+            <!-- The Button to Open -->
+            <button
+              type="button"
+              class="closeFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#F67E7E]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                ><path
+                  fill="#012F34"
+                  fill-rule="evenodd"
+                  d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"></path></svg
+              >
+            </button>
+          </div>
         </div>
         <!-- Aden Allan -->
         <div
-          class="xl:max-2xl:w-[21.875rem ] h-[15.8125rem] w-[20.4375rem] bg-[#002529]
-          md:w-[17.5625rem]"
+          class="relative flex h-[15.8125rem] w-[20.4375rem] flex-col items-center bg-[#002529] pb-14 pt-8 md:w-[17.5625rem] xl:max-2xl:w-[21.875rem]"
         >
-          <p class="">
-            “Empowered teams create truly amazing products. Set the north star
-            and let them follow it.”
-          </p>
-          <h3 class="">Aden Allan</h3>
-          <h4 class="">Head of Talent</h4>
+          <!-- Flip Card -->
+          <div class="flipCard hidden">
+            <div class="flex flex-col items-center text-center">
+              <h3 class="mb-2 text-lg font-bold text-[#79C8C7]">Aden Allan</h3>
+              <p
+                class="w-[14.666rem] text-[0.9375rem] font-semibold leading-[1.5625rem] text-white"
+              >
+                “Empowered teams create truly amazing products. Set the north
+                star and let them follow it.”
+              </p>
+              <div class="mt-6 flex items-center justify-center gap-4">
+                <a href="" class=""
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="20"
+                    ><path
+                      fill="#FFF"
+                      d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                    ></path></svg
+                  ></a
+                >
+                <a href="" class="">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                  >
+                    <path
+                      fill="#FFF"
+                      d="M18 0H2C.9 0 0 .9 0 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zM6 17H3V8h3v9zM4.5 6.3c-1 0-1.8-.8-1.8-1.8s.8-1.8 1.8-1.8 1.8.8 1.8 1.8-.8 1.8-1.8 1.8zM17 17h-3v-5.3c0-.8-.7-1.5-1.5-1.5s-1.5.7-1.5 1.5V17H8V8h3v1.2c.5-.8 1.6-1.4 2.5-1.4 1.9 0 3.5 1.6 3.5 3.5V17z"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <!-- The Button to Close -->
+              <button
+                type="button"
+                class="openFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#79C8C7]"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+                  ><path
+                    fill="#012F34"
+                    fill-rule="evenodd"
+                    d="M15.01.368l2.122 2.122-6.01 6.01 6.01 6.01-2.122 2.122L9 10.622l-6.01 6.01L.868 14.51 6.88 8.5.87 2.49 2.988.368 9 6.38 15.01.37z"
+                  ></path></svg
+                >
+              </button>
+            </div>
+          </div>
+          <!-- Main Card -->
+          <div class="mainCard flex flex-col items-center gap-4 text-center">
+            <div class="">
+              <img
+                src="/public/images/avatar-aden.jpg"
+                alt=""
+                class="size-24 rounded-full border-[2px] border-solid border-[#C4FFFE]"
+              />
+            </div>
+            <div class="">
+              <h3 class="text-lg font-bold text-[#79C8C7]">Aden Allan</h3>
+              <h4
+                class="text-[0.9375rem] font-medium leading-[1.5625rem] text-white"
+              >
+                Head of Talent
+              </h4>
+            </div>
+            <!-- The Button to Open -->
+            <button
+              type="button"
+              class="closeFlipCard absolute bottom-[-1.813rem] flex size-14 items-center justify-center rounded-full bg-[#F67E7E]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                ><path
+                  fill="#012F34"
+                  fill-rule="evenodd"
+                  d="M10 0v5.999L16 6v4h-6v6H6v-6H0V6h6V0h4z"></path></svg
+              >
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -122,3 +578,25 @@ import Footer from "@/components/Footer.astro";
   <!-- The Footer -->
   <Footer />
 </Layout>
+
+<script is:inline>
+  const flipCard = document.querySelectorAll(".flipCard");
+  const closeFlipCard = document.querySelectorAll(".closeFlipCard");
+  const openFlipCard = document.querySelectorAll(".openFlipCard");
+  const mainCard = document.querySelectorAll(".mainCard");
+
+  for (let i = 0; i < closeFlipCard.length; i++) {
+    closeFlipCard[i].addEventListener("click", function () {
+      flipCard[i].classList.toggle("hidden");
+      mainCard[i].classList.toggle("hidden");
+      closeFlipCard[i].classList.toggle("hidden");
+    });
+  }
+  for (let i = 0; i < openFlipCard.length; i++) {
+    openFlipCard[i].addEventListener("click", function () {
+      flipCard[i].classList.toggle("hidden");
+      mainCard[i].classList.toggle("hidden");
+      closeFlipCard[i].classList.toggle("hidden");
+    });
+  }
+</script>
