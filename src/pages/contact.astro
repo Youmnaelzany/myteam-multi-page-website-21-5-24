@@ -1,0 +1,166 @@
+---
+import Header from "@/components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Frontend Mentor | myteam website challenge - Homepage">
+  <!-- The Header-->
+  <Header />
+  <main class="overflow-x-hidden">
+    <section
+      class="relative flex flex-col justify-between xl:max-2xl:mx-[10.31rem] xl:max-2xl:flex-row"
+    >
+      <section
+        class="relative mb-16 mt-20 flex flex-col gap-10 px-6 md:ml-[7.94rem] md:mr-[7.87rem] md:mt-[7.5rem] md:gap-6 xl:max-2xl:mx-0 xl:max-2xl:mb-[7.5rem] xl:max-2xl:gap-10"
+      >
+        <img
+          src="/images/bg-pattern-about-2-contact-1.svg"
+          alt=""
+          class="absolute hidden md:left-[-14.313rem] md:max-2xl:flex xl:left-[-14.31rem]"
+        />
+        <div
+          class="flex flex-col items-center gap-4 text-center md:gap-6 xl:max-2xl:items-start xl:max-2xl:gap-4 xl:max-2xl:text-left"
+        >
+          <h1
+            class="text-[2.5rem] font-bold leading-10 text-white md:text-[4rem] md:leading-[3.5rem] xl:max-2xl:text-[4rem] xl:max-2xl:leading-[6.25rem]"
+          >
+            Contact
+          </h1>
+          <h2 class="text-[2rem] font-bold leading-[3rem] text-[#F67E7E]">
+            Ask us about
+          </h2>
+        </div>
+        <div class="flex flex-col gap-6 md:gap-2">
+          <div class="flex items-center justify-between gap-[1.44rem]">
+            <img src="/images/icon-person.svg" alt="" class="" />
+            <h3
+              class="w-[14.5rem] text-lg font-bold text-white md:w-[26.25rem] xl:max-2xl:w-[27.8125rem]"
+            >
+              The quality of our talent network
+            </h3>
+          </div>
+          <div class="flex items-center justify-between gap-[1.44rem]">
+            <img src="/images/icon-cog.svg" alt="" class="" />
+            <h3
+              class="w-[14.5rem] text-lg font-bold text-white md:w-[26.25rem] xl:max-2xl:w-[27.8125rem]"
+            >
+              Usage & implementation of our software
+            </h3>
+          </div>
+          <div class="flex items-center justify-between gap-[1.44rem]">
+            <img src="/images/icon-chart.svg" alt="" class="" />
+            <h3
+              class="w-[14.5rem] text-lg font-bold text-white md:w-[26.25rem] xl:max-2xl:w-[27.8125rem]"
+            >
+              How we help drive innovation
+            </h3>
+          </div>
+        </div>
+      </section>
+      <section
+        class="md:mr mx-6 mb-[5.5rem] md:mb-[7rem] md:ml-[7.19rem] md:mr-[7.06rem] xl:max-2xl:mx-0 xl:max-2xl:mb-[8rem] xl:max-2xl:mt-[8.12rem]"
+      >
+        <form action="" method="get">
+          <div class="flex flex-col gap-[2.56rem] xl:max-2xl:mr-[10.31rem]">
+            <!-- Name -->
+            <label
+              for="userName"
+              class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
+            >
+              <span
+                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                >Name</span
+              >
+              <input
+                type="text"
+                name="userName"
+                id="userName"
+                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+              />
+            </label>
+            <!-- Email Address -->
+            <label
+              for="userEmail"
+              class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
+            >
+              <span
+                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                >Email Address</span
+              >
+              <input
+                type="text"
+                name="userEmail"
+                id="userEmail"
+                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+              />
+            </label>
+            <!-- Company Name -->
+            <label
+              for="userCompany"
+              class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
+            >
+              <span
+                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                >Company Name</span
+              >
+              <input
+                type="text"
+                name="userCompany"
+                id="userCompany"
+                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+              />
+            </label>
+            <!-- Title -->
+            <label
+              for="userTitle"
+              class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
+            >
+              <span
+                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                >Title</span
+              >
+              <input
+                type="text"
+                name="userTitle"
+                id="userTitle"
+                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+              />
+            </label>
+            <!-- Message  -->
+            <label
+              for="userMessage"
+              class="relative flex flex-col after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
+            >
+              <span
+                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                >Message</span
+              >
+              <textarea
+                name="userMessage"
+                id="userMessage"
+                cols="30"
+                rows="2"
+                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+              ></textarea>
+            </label>
+            <button
+              type="submit"
+              class="h-12 w-[7.6875rem] rounded-3xl border-[2px] border-solid border-white bg-white text-lg font-semibold text-[#004047]"
+            >
+              submit</button
+            >
+          </div>
+        </form>
+        <img
+          src="/public/images/bg-pattern-contact-2.svg"
+          alt=""
+          class="absolute bottom-[-6.875rem] right-[-6.375rem] md:bottom-[-0.875rem] xl:max-2xl:right-[-16.375rem]"
+        />
+      </section>
+    </section>
+  </main>
+  <!-- The Footer -->
+  <Footer />
+</Layout>
