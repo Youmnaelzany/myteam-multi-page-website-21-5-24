@@ -27,7 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/images/screenshot/Screenshot%202024-05-25%20at%2021-40-02%20Frontend%20Mentor%20myteam%20website%20challenge%20-%20Homepage.png)
+![](./public/images/screenshot/Screenshot%202024-05-25%20at%2021-40-12%20Frontend%20Mentor%20myteam%20website%20challenge%20-%20Homepage.png)
+![](./public/images/screenshot/Screenshot%202024-05-25%20at%2021-40-24%20Frontend%20Mentor%20myteam%20website%20challenge%20-%20Homepage.png)
+![](./public/images/screenshot/Screenshot%202024-05-25%20at%2021-40-34%20Frontend%20Mentor%20myteam%20website%20challenge%20-%20Homepage.png)
+![](./public/images/screenshot/Screenshot%202024-05-25%20at%2021-40-48%20Frontend%20Mentor%20myteam%20website%20challenge%20-%20Homepage.png)
+![](./public/images/screenshot/Screenshot%202024-05-25%20at%2021-41-06%20Frontend%20Mentor%20myteam%20website%20challenge%20-%20Homepage.png)
+![](./public/images/screenshot/Screenshot%202024-05-25%20at%2021-41-13%20Frontend%20Mentor%20myteam%20website%20challenge%20-%20Homepage.png)
 
 ### Links
 
