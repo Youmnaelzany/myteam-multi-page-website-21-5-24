@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Youmnaelzany/myteam-multi-page-website-21-5-24.git)
+- Live Site URL: [Add live site URL here](https://myteammultipagewebsite215.netlify.app/)
 
 ## My process
 
