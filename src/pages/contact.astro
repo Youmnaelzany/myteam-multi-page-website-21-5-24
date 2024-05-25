@@ -67,17 +67,17 @@ import Footer from "@/components/Footer.astro";
             <!-- Name -->
             <label
               for="userName"
-              class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
+              class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 focus:after:bg-[#79C8C7] md:max-2xl:after:w-[33.75rem]"
             >
               <span
-                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                class="spanFocus text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
                 >Name</span
               >
               <input
                 type="text"
                 name="userName"
                 id="userName"
-                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+                class="inputFocus border-none bg-transparent pl-8 text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
               />
             </label>
             <!-- Email Address -->
@@ -86,14 +86,14 @@ import Footer from "@/components/Footer.astro";
               class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
             >
               <span
-                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                class="spanFocus text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
                 >Email Address</span
               >
               <input
                 type="text"
                 name="userEmail"
                 id="userEmail"
-                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+                class="inputFocus border-none bg-transparent pl-8 text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
               />
             </label>
             <!-- Company Name -->
@@ -102,14 +102,14 @@ import Footer from "@/components/Footer.astro";
               class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
             >
               <span
-                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                class="spanFocus text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
                 >Company Name</span
               >
               <input
                 type="text"
                 name="userCompany"
                 id="userCompany"
-                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+                class="inputFocus border-none bg-transparent pl-8 text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
               />
             </label>
             <!-- Title -->
@@ -118,14 +118,14 @@ import Footer from "@/components/Footer.astro";
               class="relative after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
             >
               <span
-                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                class="spanFocus text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
                 >Title</span
               >
               <input
                 type="text"
                 name="userTitle"
                 id="userTitle"
-                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+                class="inputFocus border-none bg-transparent pl-8 text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
               />
             </label>
             <!-- Message  -->
@@ -134,7 +134,7 @@ import Footer from "@/components/Footer.astro";
               class="relative flex flex-col after:absolute after:-bottom-4 after:left-0 after:h-[0.0625rem] after:w-[20.3125rem] after:bg-white/60 md:max-2xl:after:w-[33.75rem]"
             >
               <span
-                class="text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
+                class="spanFocus text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white/60"
                 >Message</span
               >
               <textarea
@@ -142,7 +142,7 @@ import Footer from "@/components/Footer.astro";
                 id="userMessage"
                 cols="30"
                 rows="2"
-                class="border-none bg-transparent text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
+                class="inputFocus border-none bg-transparent pl-8 text-[0.9375rem] font-semibold leading-[1.5625rem] tracking-[-0.00719rem] text-white outline-none"
               ></textarea>
             </label>
             <button
@@ -154,13 +154,71 @@ import Footer from "@/components/Footer.astro";
           </div>
         </form>
         <img
-          src="/public/images/bg-pattern-contact-2.svg"
+          src="/images/bg-pattern-contact-2.svg"
           alt=""
           class="absolute bottom-[-6.875rem] right-[-6.375rem] md:bottom-[-0.875rem] xl:max-2xl:right-[-16.375rem]"
         />
+        <div
+          id="errorMessage"
+          class="relative bottom-[-2rem] text-[0.625rem] font-bold italic leading-normal text-[#F67E7E]"
+        >
+        </div>
       </section>
     </section>
   </main>
   <!-- The Footer -->
   <Footer />
 </Layout>
+
+<script is:inline>
+  const inputFocus = document.getElementsByClassName("inputFocus");
+  const spanFocus = document.getElementsByClassName("spanFocus");
+
+  for (let i = 0; i < inputFocus.length; i++) {
+    inputFocus[i].addEventListener("focus", function () {
+      spanFocus[i].classList.add("hidden");
+    });
+    inputFocus[i].addEventListener("blur", function () {
+      spanFocus[i].classList.remove("hidden");
+    });
+  }
+
+  const form = document.querySelector("form");
+  const nameInput = document.getElementById("userName");
+  const emailInput = document.getElementById("userEmail");
+  const messageInput = document.getElementById("userMessage");
+  const errorMessage = document.getElementById("errorMessage");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Reset the error message
+    errorMessage.textContent = "";
+
+    // Validate the form inputs
+    if (nameInput.value.trim() === "") {
+      errorMessage.textContent = "Name is required";
+      return;
+    }
+
+    if (emailInput.value.trim() === "") {
+      errorMessage.textContent = "Email address is required";
+      return;
+    }
+
+    if (messageInput.value.trim() === "") {
+      errorMessage.textContent = "Message is required";
+      return;
+    }
+
+    // Validate the email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput.value.trim())) {
+      errorMessage.textContent = "Invalid email address";
+      return;
+    }
+
+    // Form is valid, submit it
+    form.submit();
+  });
+</script>
